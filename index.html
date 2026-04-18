@@ -39,45 +39,69 @@
     <section class="featured padding-y" id="featured">
         <div class="container fade-in">
             <h2 class="section-title">Crafted with care</h2>
-            <div class="grid-4">
-                <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/floral_bouquet.jpg" alt="Floral Bouquet Embroidery" loading="lazy"></div>
-                    <h3>Floral Bouquets</h3>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="bouquets">Floral Bouquets</button>
+                <button class="tab-btn" data-filter="names">Custom Names</button>
+                <button class="tab-btn" data-filter="nursery">Nursery Art</button>
+                <button class="tab-btn" data-filter="wreaths">Initial Wreaths</button>
+            </div>
+
+            <div class="grid-gallery" id="product-gallery">
+                <div class="product-item" data-category="bouquets">
+                    <div class="img-wrapper">
+                        <img src="assets/floral_bouquet.jpg" alt="Floral Bouquet Embroidery" loading="lazy">
+                    </div>
                 </div>
-                <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/name_keepsake.jpg" alt="Custom Name Keepsake Embroidery" loading="lazy"></div>
-                    <h3>Custom Name Keepsakes</h3>
+                <div class="product-item" data-category="names">
+                    <div class="img-wrapper">
+                        <img src="assets/name_keepsake.jpg" alt="Custom Name Keepsake Embroidery" loading="lazy">
+                    </div>
                 </div>
-                <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/nursery_art.jpg" alt="Baby Nursery Art Embroidery" loading="lazy"></div>
-                    <h3>Baby Nursery Art</h3>
+                <div class="product-item" data-category="nursery">
+                    <div class="img-wrapper">
+                        <img src="assets/nursery_art.jpg" alt="Baby Nursery Art Embroidery" loading="lazy">
+                    </div>
                 </div>
-                <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/initial_wreath.jpg" alt="Initial Wreath Embroidery" loading="lazy"></div>
-                    <h3>Initial Wreaths</h3>
+                <div class="product-item" data-category="nursery">
+                    <div class="img-wrapper">
+                        <img src="assets/nishtha_nursery.jpeg" alt="Nishtha Nursery Art Embroidery" loading="lazy">
+                    </div>
+                </div>
+                <div class="product-item" data-category="wreaths">
+                    <div class="img-wrapper">
+                        <img src="assets/initial_wreath.jpg" alt="Initial Wreath Embroidery" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="how-it-works padding-y bg-beige" id="how-it-works">
+    <section class="how-it-works padding-y-sm bg-beige" id="how-it-works">
         <div class="container fade-in">
             <h2 class="section-title">How it works</h2>
-            <div class="grid-3">
-                <div class="step-card">
-                    <div class="step-num">01</div>
-                    <h3>Share your photo</h3>
-                    <p>Send a message on WhatsApp with your precious memory.</p>
+            <div class="workflow-timeline">
+                <div class="timeline-step">
+                    <div class="step-bg-num">01</div>
+                    <div class="step-content">
+                        <h3>Share your photo</h3>
+                        <p>Send a message on WhatsApp with your precious memory.</p>
+                    </div>
                 </div>
-                <div class="step-card">
-                    <div class="step-num">02</div>
-                    <h3>We design & stitch</h3>
-                    <p>Slowly and intentionally, your piece is hand-embroidered into a keepsake.</p>
+                <div class="timeline-step">
+                    <div class="step-bg-num">02</div>
+                    <div class="step-content">
+                        <h3>We design & stitch</h3>
+                        <p>Slowly and intentionally, your piece is hand-embroidered into a keepsake.</p>
+                    </div>
                 </div>
-                <div class="step-card">
-                    <div class="step-num">03</div>
-                    <h3>Delivered to you</h3>
-                    <p>Your unique artwork arrives beautifully packaged at your doorstep.</p>
+                <div class="timeline-step">
+                    <div class="step-bg-num">03</div>
+                    <div class="step-content">
+                        <h3>Delivered to you</h3>
+                        <p>Your unique artwork arrives beautifully packaged at your doorstep.</p>
+                    </div>
                 </div>
             </div>
             <div class="center-btn">
