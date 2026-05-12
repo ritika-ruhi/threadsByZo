@@ -18,6 +18,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJL3Q3Q33"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EYJL3Q3Q33');
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -42,36 +52,41 @@
             
             <div class="category-tabs">
                 <button class="tab-btn active" data-filter="all">All</button>
-                <button class="tab-btn" data-filter="bouquets">Floral Bouquets</button>
-                <button class="tab-btn" data-filter="names">Custom Names</button>
-                <button class="tab-btn" data-filter="nursery">Nursery Art</button>
-                <button class="tab-btn" data-filter="wreaths">Initial Wreaths</button>
+                <button class="tab-btn" data-filter="home-decor">Names & Nooks</button>
+                <button class="tab-btn" data-filter="portraits">Portraits Retold</button>
+                <button class="tab-btn" data-filter="monograms">Monograms</button>
+                <button class="tab-btn" data-filter="blooms">Forever Blooms</button>
             </div>
 
             <div class="grid-gallery" id="product-gallery">
-                <div class="product-item" data-category="bouquets">
+                <div class="product-item" data-category="blooms">
                     <div class="img-wrapper">
                         <img src="assets/floral_bouquet.jpg" alt="Floral Bouquet Embroidery" loading="lazy">
                     </div>
                 </div>
-                <div class="product-item" data-category="names">
+                <div class="product-item" data-category="home-decor">
                     <div class="img-wrapper">
                         <img src="assets/name_keepsake.jpg" alt="Custom Name Keepsake Embroidery" loading="lazy">
                     </div>
                 </div>
-                <div class="product-item" data-category="nursery">
+                <div class="product-item" data-category="home-decor">
                     <div class="img-wrapper">
                         <img src="assets/nursery_art.jpg" alt="Baby Nursery Art Embroidery" loading="lazy">
                     </div>
                 </div>
-                <div class="product-item" data-category="nursery">
+                <div class="product-item" data-category="home-decor">
                     <div class="img-wrapper">
                         <img src="assets/nishtha_nursery.jpeg" alt="Nishtha Nursery Art Embroidery" loading="lazy">
                     </div>
                 </div>
-                <div class="product-item" data-category="wreaths">
+                <div class="product-item" data-category="monograms">
                     <div class="img-wrapper">
                         <img src="assets/initial_wreath.jpg" alt="Initial Wreath Embroidery" loading="lazy">
+                    </div>
+                </div>
+                <div class="product-item" data-category="portraits">
+                    <div class="img-wrapper">
+                        <img src="assets/photo_embroidery.jpg" alt="Photo Embroidery" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -144,6 +159,7 @@
                 <a href="#home">Home</a>
                 <a href="#featured">Gallery</a>
                 <a href="mailto:threadedbyzo@gmail.com">Email Us</a>
+                <a href="https://www.instagram.com/threads_by_zo?igsh=b2I1MGxpbTFzYXBn&utm_source=website" target="_blank" rel="noopener">Instagram</a>
             </div>
         </div>
         <div class="container footer-bottom">
