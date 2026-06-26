@@ -28,6 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tabBtns.forEach(btn => {
         btn.addEventListener("click", () => {
+            // Check scroll state BEFORE filtering
+            let needsScroll = false;
+            const featuredSection = document.getElementById("featured");
+            if (featuredSection) {
+                // If the top of the gallery section has scrolled up past the viewport
+                if (featuredSection.getBoundingClientRect().top < 100) {
+                    needsScroll = true;
+                }
+            }
+
             tabBtns.forEach(t => t.classList.remove("active"));
             btn.classList.add("active");
 
@@ -43,6 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     item.classList.add("hidden");
                 }
             });
+
+            // Force scroll after layout settles, using universally supported scrollTo(x, y)
+            if (needsScroll && featuredSection) {
+                setTimeout(() => {
+                    const rect = featuredSection.getBoundingClientRect();
+                    const targetY = (window.pageYOffset || window.scrollY) + rect.top - 105;
+                    window.scrollTo(0, targetY);
+                }, 10);
+            }
         });
     });
 });
