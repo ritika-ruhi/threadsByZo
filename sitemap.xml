@@ -5,4 +5,9 @@
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://threadsbyzo.in/products.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
